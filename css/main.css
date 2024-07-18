@@ -608,6 +608,10 @@ footer {
     background-size: auto;
     background-position: top left;
   }
+  .order_inner {
+    position: relative;
+    height: 60vh;
+  }
   .order_inner .order_information {
     position: absolute;
     text-align: center;
@@ -731,8 +735,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media (max-width: 900px) {
-  /*catalog*/
+@media (min-width: 768px) and (max-width: 900px) {
   .catalog_inner .catalog_list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -745,7 +748,17 @@ footer {
     text-align: center;
     gap: 5px;
   }
-  /*question*/
+  .order_inner .order_information {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 2%;
+    width: 481px;
+    z-index: 3;
+  }
+  .order_inner .order_information-title {
+    gap: 20px;
+  }
   .question_inner {
     flex-direction: column;
     margin-top: 30px;
@@ -773,7 +786,7 @@ footer {
     margin-top: 20px;
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 901px) and (max-width: 1200px) {
   .order_inner .order_information {
     position: absolute;
     text-align: left;
