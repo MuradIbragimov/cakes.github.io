@@ -1,0 +1,66 @@
+#reviews {
+  background-color: #081130;
+  .reviews_inner {
+    .reviews_title {
+      font-weight: 500;
+      color: $title_color;
+    }
+
+    .swiper {
+      display: flex;
+      flex-direction: column;
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          gap: 50px;
+          padding: 100px;
+          border-radius: 5px;
+          background: $title_color;
+          .slider_information {
+            width: 480px;
+            display: flex;
+            flex-direction: column;
+            .quote {
+              margin: 30px 0;
+              font-size: 30px;
+              font-weight: 500;
+              line-height: 43px;
+            }
+            .quote_text {
+              margin-bottom: 30px;
+              font-style: 15px;
+              line-height: 25px;
+            }
+            a {
+              text-decoration: underline;
+            }
+          }
+
+          .slider_profil {
+            text-align: center;
+            .name_author {
+              font-size: 21px;
+              font-weight: 400;
+              line-height: 30px;
+              color: $main_text_color;
+            }
+            .city {
+              line-height: 27px;
+              color: $dop_text_color;
+            }
+          }
+        }
+      }
+      .btn-swiper {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        gap: 20px;
+        .swp:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

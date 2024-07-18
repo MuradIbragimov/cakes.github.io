@@ -1,0 +1,54 @@
+/*Header*/
+
+#header {
+  margin-bottom: 10%;
+  margin-top: 37px;
+  border-bottom: 1px solid #2b3743;
+  padding: 0 15px;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 30px;
+  color: $title_color;
+}
+
+.header_info {
+  display: flex;
+  gap: 20px;
+
+  &-map,
+  &-phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+      color: $title_color;
+    }
+  }
+
+  &-phone .phone_number a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $title_color;
+  }
+
+  &-phone .phone_number p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $title_color;
+  }
+}

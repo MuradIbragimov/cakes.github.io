@@ -1,0 +1,59 @@
+#order {
+  position: relative;
+  background-color: #081130;
+  background-image: url("../img/background/phone.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.order_inner {
+  position: relative;
+  height: 60vh;
+  .order_information {
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    width: 481px;
+    z-index: 3;
+    &-title {
+      .order_top {
+        font-size: 11px;
+        line-height: 16px;
+        color: $main_text_color;
+      }
+      .order-title {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-top: 40px;
+        color: $title_color;
+      }
+      p {
+        font-size: 21px;
+        line-height: 30px;
+        color: $title_color;
+        margin: 40px 0;
+      }
+    }
+  }
+
+  .order_btn {
+    padding: 30px 50px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+}
+
+.bottom_order {
+  .phone_photo {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 100%;
+  }
+  .bottom-img {
+    z-index: 10;
+  }
+}

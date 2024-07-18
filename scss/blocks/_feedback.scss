@@ -1,0 +1,45 @@
+#feedback {
+  background-color: #081130;
+}
+
+.feedback_inner {
+  text-align: center;
+  background: $title_color;
+  border-radius: 8px;
+  padding: 30px 50px;
+  .feedback_title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    color: $main_text_color;
+  }
+  .feedback_subtitle {
+    font-size: 21px;
+    line-height: 30px;
+    color: $main_text_color;
+    margin-bottom: 20px;
+  }
+
+  .feedback_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 0 auto;
+    width: 70%;
+    .feedback_tel {
+      width: 100%;
+      height: 85px;
+      border-radius: 8px;
+      padding: 29px 41px;
+      background: #f2f6fa;
+      color: $placeholder_color;
+    }
+
+    .btn-primary {
+      padding: 29px 41px;
+    }
+    .feedback_chekbox {
+      grid-column: 1 / 2 span;
+    }
+  }
+}

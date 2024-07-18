@@ -1,0 +1,13 @@
+footer {
+  background-color: #081130;
+}
+.footer_inner {
+  text-align: center;
+  color: $placeholder_color;
+  margin-top: 50px;
+  .footer_one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+  }
+}

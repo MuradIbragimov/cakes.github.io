@@ -1,0 +1,322 @@
+@media (max-width: 767px) {
+  /*main style*/
+  .bg {
+    background-position: right;
+    background-size: auto;
+  }
+
+  .title {
+    text-align: center;
+    font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  /*Header*/
+  #header {
+    border: none;
+  }
+
+  .header_inner {
+    display: flex;
+    flex-direction: column;
+
+    .header_info {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+      gap: 10px;
+
+      &-map {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 5px;
+
+        p {
+          font-size: 12px;
+          line-height: 18px;
+          color: $title_color;
+        }
+      }
+
+      &-phone {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .phone_number {
+          a {
+            font-size: 20px;
+            font-weight: 700px;
+            line-height: 30px;
+            color: $title_color;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  /*Main*/
+  .starting_inner {
+    .price_info {
+      text-align: center;
+      .main_title {
+        font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+        margin-top: 10px;
+        line-height: 35px;
+      }
+      .subtitle {
+        font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1280));
+        line-height: 20px;
+        margin: 15px 0;
+      }
+    }
+
+    .catalog-info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      .main-btn {
+        padding: 15px 25px;
+      }
+    }
+  }
+
+  /*Catalog*/
+  .catalog_inner {
+    .catalog_list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      &-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+      }
+    }
+  }
+
+  /*Order*/
+  #order {
+    background-size: auto;
+    background-position: top left;
+  }
+  .order_inner {
+    .order_information {
+      position: absolute;
+      text-align: center;
+      top: 20%;
+      left: 5%;
+      width: 100%;
+      z-index: 3;
+      &-title {
+        gap: 20px;
+        .order-title {
+          font-size: calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1280));
+          line-height: 30px;
+          margin-top: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 15px;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .order_btn {
+      margin-top: 30px;
+      padding: 15px 25px;
+    }
+  }
+
+  /*question*/
+  .question_inner {
+    flex-direction: column;
+    margin-top: 30px;
+    .question_name {
+      position: absolute;
+      top: 90%;
+      .name {
+        font-size: 1rem;
+        padding: 5px 15px;
+      }
+      .confectioner {
+        font-size: 10px;
+        padding: 5px 5px;
+      }
+    }
+
+    .question_inbformation {
+      text-align: center;
+      width: 100%;
+      .question_title {
+        font-size: calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1280));
+        font-weight: 500;
+        line-height: 25px;
+        margin-top: 20px;
+      }
+      ul {
+        li {
+          text-align: left;
+          font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1280));
+          font-size: 14px;
+          line-height: 27px;
+          margin-top: 10px;
+        }
+      }
+      .question_btn {
+        width: 70%;
+        padding: 15px 26px;
+        margin: 40px;
+      }
+    }
+  }
+
+  /*Reviews*/
+  #reviews {
+    .reviews_inner {
+      .reviews_title {
+        font-weight: 500;
+        color: $title_color;
+      }
+
+      .swiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+            .slider_information {
+              width: 100%;
+              .quote {
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+        .btn-swiper {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /*Feedback*/
+  .feedback_inner {
+    padding: 15px 25px;
+    .feedback_title {
+      font-size: calc(24px + (10 + 10 * 0.7) * ((100vw - 320px) / 1280));
+      line-height: 30px;
+    }
+    .feedback_subtitle {
+      font-size: calc(14px + (7 + 7 * 0.7) * ((100vw - 320px) / 1280));
+      line-height: 15px;
+
+      margin: 20px;
+    }
+
+    .feedback_form {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 0 auto;
+      width: 70%;
+      .feedback_tel {
+        text-align: center;
+        padding: 3px 3px;
+      }
+
+      .btn-primary {
+        padding: 15px 20px;
+      }
+      .feedback_chekbox {
+        font-size: 14px;
+        grid-column: 1 / 2 span;
+      }
+    }
+  }
+
+  /*footer*/
+  .footer_inner {
+    .footer_one {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+// @media (max-width: ) {
+// }
+@media (max-width: 900px) {
+  /*catalog*/
+  .catalog_inner {
+    .catalog_list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      &-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+      }
+    }
+  }
+
+  /*question*/
+  .question_inner {
+    flex-direction: column;
+    margin-top: 30px;
+    .question_name {
+      position: absolute;
+      top: 90%;
+      .name {
+        font-size: 1rem;
+        padding: 5px 15px;
+      }
+      .confectioner {
+        font-size: 10px;
+        padding: 5px 5px;
+      }
+    }
+
+    .question_inbformation {
+      text-align: center;
+      width: 100%;
+      .question_title {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 25px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .order_inner {
+    .order_information {
+      position: absolute;
+      text-align: left;
+      top: 0;
+      left: 2%;
+      width: 481px;
+      z-index: 3;
+      &-title {
+        gap: 20px;
+      }
+    }
+  }
+}

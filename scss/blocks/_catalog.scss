@@ -1,0 +1,36 @@
+.catalog_inner {
+  .catalog_title {
+    font-weight: 400;
+    color: $main_text_color;
+  }
+  .catalog_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    &-product {
+      gap: 24px;
+      .product_name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 34px;
+        color: $main_text_color;
+      }
+      .product_description {
+        width: 240px;
+        height: 48px;
+        color: $main_text_color;
+      }
+      .product_price {
+        font-weight: 500;
+        line-height: 36px;
+        color: $price_color;
+      }
+      .catalog-btn {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 20px 40px;
+      }
+    }
+  }
+}
